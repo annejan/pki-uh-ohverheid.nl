@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>The curious case of the Dangerous Delegated Responder Cert</title>
+    <meta name="description" content="PKIoverheid: Incorrect OCSP Delegated Responder Certificate" />
+    <meta name="keywords" content="PKI, overheid, OCSP, Delegated Responder Certificate" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html">pki<span class="logo_colour">-uh-ohverheid</span></a></h1>
+                <h2>The curious case of the Dangerous Delegated Responder Cert</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <h3>Latest News</h3>
+            <h4>Issue first noticed</h4>
+            <h5>July 1st, 2020</h5>
+            <p>
+                First notification: <a href="https://www.mail-archive.com/dev-security-policy@lists.mozilla.org/msg13493.html">m.d.s.p.</a>
+            </p>
+            <p></p>
+            <h4>New Website Launched</h4>
+            <h5>July 23rd, 2020</h5>
+            <p>This website was been launched!</p>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://deFEEST.nl">deFEEST</a></li>
+                <li><a href="http://www.steves-internet-guide.com/ssl-certificates-explained/">SSL Certificates Explained</a></li>
+                <li><a href="https://nwrickert.wordpress.com/2011/10/07/certificates-for-dummies/">Certificates for dummies</a></li>
+                <li><a href="https://letsencrypt.org/">Let's Encrypt</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!-- insert the page content here -->
+            <h1>Incorrect OCSP Delegated Responder Certificate</h1>
+            <p>PKIoverheid has issued one or more OCSP Delegated Responders, as defined within <a href="https://tools.ietf.org/html/rfc6960#section-2.6" rel="nofollow">RFC 6960, Section 2.6</a> and <a href="https://tools.ietf.org/html/rfc6960#section-4.2.2.2" rel="nofollow">Section 4.2.2.2</a>, without including the <code>id-pkix-ocsp-nocheck</code> response, as required by the Baseline Requirements, <a href="https://cabforum.org/wp-content/uploads/Baseline_Requirements_V1.pdf" rel="nofollow">Version 1, Section 13.2.5</a> through <a href="https://cabforum.org/wp-content/uploads/CA-Browser-Forum-BR-1.7.0.pdf" rel="nofollow">Version 1.7.0, Section 4.9.9</a></p>
+            <p>
+                More detailed information:<br/>
+                <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1649964">https://bugzilla.mozilla.org/show_bug.cgi?id=1649964</a><br />
+                <a href="https://groups.google.com/forum/#!msg/mozilla.dev.security.policy/EzjIkNGfVEE/XSfw4tZPBwAJ">https://groups.google.com/forum/#!msg/mozilla.dev.security.policy/EzjIkNGfVEE/XSfw4tZPBwAJ</a>
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        Copyright &copy;2020 <a href="https://defeest.nl">deFEEST</a> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+    </div>
+</div>
+</body>
+</html>
